@@ -3,7 +3,8 @@ var app = express();
 
 
 app.get( '/', function( req, res ) {
-    res.send( 'hi' );
+
+    res.send( 'hi ' + ( 4 + 2 ) );
 });
 
 app.use( express.static( __dirname + '/public/' ) );
